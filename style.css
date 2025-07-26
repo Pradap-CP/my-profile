@@ -1,0 +1,122 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #e13333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 20px 0;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00bcd4;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #00bcd4, #006064);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero h1 span {
+  color: #ffeb3b;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+/* Skills List */
+.skills ul {
+  list-style-type: square;
+  padding-left: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
